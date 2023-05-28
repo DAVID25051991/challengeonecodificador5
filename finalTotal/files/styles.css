@@ -98,7 +98,7 @@ header {
     height: 67px;
     width: 328px;
 }
-.btn-desencriptar {
+.btn-desencritador {
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -107,4 +107,37 @@ header {
     height: 67px;
     margin-left: 30px;
     width: 328px;
+}
+.seccion_2{
+    display: block;
+}
+.mensaje{
+    height: 630px;
+    background: white;
+    background-image: url("muneco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    resize: none;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.boton_copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 565px;
+    position: absolute;
+    width: 336px;
 }
