@@ -1,0 +1,110 @@
+*, /*es el padre esto le informa a toda la pagina que va a tener estas propiedades*/
+*::before,/*se utiliza para agregar contenido antes del contenido real de un elemento. */
+*::after {/* se utiliza para agregar contenido después del contenido real de un elemento. */
+    background: #E5E5E5;;/*da el color de fondo de la paquina*/
+    box-sizing: border-box;/*se indica que el tamaño total de un elemento incluirá su borde y su padding.*/
+    margin: 0;/*indica la margen de la pagina  cuando comezamos indica que es 0*/
+    padding: 0;/*indica una margen que se direige hacia adentro*/
+}
+header {
+    position: relative;/* se utiliza para establecer la posición de un elemento en relación con su contenedor. */
+    display: flex;/* se utiliza para establecer el modo de visualización de un elemento. En este caso, flex establece el modo de visualización del elemento como un contenedor flexible.*/
+    align-items: center; /* se utiliza en contenedores flexibles para establecer la alineación vertical de los elementos secundarios. En este caso, center alinea los elementos secundarios verticalmente en el centro del contenedor flexible.*/
+    justify-content: space-between;/*se utiliza en contenedores flexibles para establecer la alineación horizontal de los elementos secundarios. En este caso, space-between distribuye los elementos secundarios con un espacio uniforme entre ellos, dejando el primer y último elemento pegados a los bordes del contenedor flexible.*/
+    width: 20%;/* se utiliza para establecer el ancho de un elemento. */
+    padding: 0 5%;/* se utiliza para establecer el espacio de relleno alrededor del contenido de un elemento. En este caso, padding: 0 5% establece un espacio de relleno de 0 píxeles en la parte superior e inferior del elemento y un espacio de relleno del 5% del ancho del elemento en la parte izquierda y derecha del mismo.*/
+    height: 5rem;/*se utiliza para establecer la altura de un elemento. En este caso, height: 5rem establece la altura del elemento a 5 unidades de medida rem*/
+}
+/*logo no tiene clase pendiente */
+.cuerpo_principal {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;/*se utiliza en elementos con display: flex para especificar cómo los elementos hijos deben envolverse o no cuando no hay suficiente espacio en el contenedor. En este caso, flex-wrap: wrap indica que los elementos hijos pueden envolverse en una nueva línea si el ancho del contenedor padre no es suficiente para acomodarlos a todos en una sola línea.*/
+    width: 100%;
+    height: 100%;
+}
+.seccion_1 {/*esta seccion me abarca toda la parte de contenedor_caja_texto1 alerta contenedor_botones */
+    font: 1em 'Inter', sans-serif;
+   /* position: relative;*/ /*todavia no la utilizare hasta estar seguro*/
+    width: 30%;
+}
+.contenedor_caja_texto1 {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    position: absolute; /* define la posición del elemento con respecto a su contenedor padre */
+    width: 100%; /* establece el ancho del elemento al 100% del ancho de su contenedor padre */
+    height: auto; /* ajusta la altura del elemento automáticamente de acuerdo a su contenido */
+    padding-left: 8.5%; /* agrega un relleno (espacio interno) de 8.5% del ancho del elemento en el lado izquierdo */
+    padding-right: 3.5%; /* agrega un relleno (espacio interno) de 3.5% del ancho del elemento en el lado derecho */
+}
+.text-area {
+    /* Define que no tenga borde, color de texto y margen superior */
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    /* Define que sea de tamaño variable, tome todo el ancho disponible y tenga un padding a la izquierda y a la derecha */
+    width: 100%;
+    height: auto;
+    padding-left: 8.5%;
+    padding-right: 3.5%;
+    /* Define la fuente que se usará */
+    font-family: 'Inter';
+    /* Define que sea de estilo normal y tamaño 32px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /* Define el alto de la línea y el texto centrado */
+    line-height: 150%;
+    text-align: center;
+    /* Define que no sea redimensionable */
+    resize: none;
+}
+
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;
+    }
+
+.text-area:focus {
+    /* Define el color del borde cuando el elemento está enfocado */
+    border-color: #5f8aa7;
+}
+.alerta {
+    position: absolute;
+    display: flex;
+    bottom: 73px;
+    padding-left: 8.5%;
+    align-items: center;
+    gap: 10px;
+    color: #495057;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+.botones{
+    display: flex;
+      margin-bottom: 10px;
+    margin-left: 180px;
+    margin-top: 18px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}

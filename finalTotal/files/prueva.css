@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&family=Instrument+Serif:ital@1&family=Vina+Sans&display=swap');
+
+
+
+
+
+
+
+.contenedor_caja_texto1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding-left: 8.5%;
+    padding-right: 3.5%;
+}
+.text-area {
+    /*border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding-left: 8.5%;
+    padding-right: 3.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    */
+    border: none;
+    width: 100%;
+    height: 5.47rem;
+    max-height: 350px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    color: #0a3871;
+    font-size: 1.3rem;
+    font-weight: 400;
+    outline: none;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.text-area:hover {
+    border-color: #b3cfd8;
+}
+.text-area:focus {
+    border-color: #5f8aa7;
+}
+
+.alerta {
+    position: absolute;
+    display: flex;
+    bottom: 73px;
+    padding-left: 8.5%;
+    align-items: center;
+    gap: 10px;
+    color: #495057;
+    font-size: 12px;
+}
+
+
+
+/*
+.Rectangle1 .mensaje{
+    position: absolute;
+width: 400px;
+height: 944px;
+left: 879px;
+top: 40px;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+
+} 
+.texto_resultado:focus {
+    outline: none;
+}
+#muneco {
+    background-color: transparent;
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.informacion{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 18px;
+    color: #495057;
+    width: 205px;
+    height: 18px;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}*/
+/*
+div .informacion{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 229px;
+height: 18px;
+left: 240px;
+top: 851px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+
+    .btn-copiar {
+        border: 1px solid #0a3871;
+        border-radius: 24px;
+        color: #0a3871;
+
+        cursor: pointer;
+        height: 67px;
+
+        position: absolute;
+        width: 336px;
+        gap: 8px;
+        text-align: center;
+        
+    }
+    .btn-copiar {
+        position: absolute;
+
+        height: 67px;
+        left: 1032px;
+        top: 885px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        /* Dark blue/dark-blue-300 */
+
+        color: #0A3871;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+/* RESPONSIVE */
+/* TABLETS */
+@media only screen and (max-width: 768px) {
+    /* SECCION 1 */
+    .caja_texto1 {
+        max-height: 300px;
+    }
+    .label_caja_texto1 {
+        left: 12%;
+    }
+    .contenedor_botones {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .boton_encriptar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .alerta {
+        bottom: 115px;
+    }
+}
+/* SMALL TABLETS */
+@media only screen and (max-width: 600px) {
+    /* SECCION 1 */
+    .seccion_1 {
+        width: 100%;
+    }
+    .contenedor_caja_texto1 {
+        padding: 0 5%;
+    }
+    .caja_texto1 {
+        max-height: 15rem;
+    }
+    .label_caja_texto1 {
+        left: 7.5%;
+    }
+    .contenedor_botones {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        bottom: 1rem;
+        grid-gap: 10px;
+        padding: 0 5%;
+    }
+    .boton_encriptar {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .alerta {
+        bottom: 11.5rem;
+        padding-left: 5%;
+    }
+    /* SECCION 2 */
+    .seccion_2 {
+        width: 100%;
+        padding: 0 5%;
+        height: 27rem;
+    }
+    .texto_resultado {
+        max-height: 15rem;
+    }
+
+    .contenedor_dibujo_hacker img {
+        max-width: 220px;
+    }
+}
+/* SMART PHONE */
+@media only screen and (max-width: 440px) {
+    * {
+        font-size: 0.9rem;
+        .alertaimg {
+            width: 15px;
+        }
+    }
+}
