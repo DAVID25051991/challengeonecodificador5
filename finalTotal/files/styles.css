@@ -82,6 +82,10 @@ header {
     margin-bottom: 10px;
     margin-left: 180px;
 }
+.informacion{
+    text-align: center;
+    
+}
 .botones{
     display: flex;
       margin-bottom: 10px;
@@ -108,36 +112,74 @@ header {
     margin-left: 30px;
     width: 328px;
 }
+
 .seccion_2{
-    display: block;
+    display: contents;
+    background: transparent;
+    
 }
-.mensaje{
-    height: 630px;
+.contenedor_seccion_2{
+    text-align: center;
+    height: 650px;
+    align-items: center;    
     background: white;
-    background-image: url("muneco.png");
-    background-repeat: no-repeat;
-    background-position: center;
     border: none;
     border-radius: 24px;
-    color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding: 30px;
+    position: relative;
+    resize: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mensaje{
+     height: 220px;
+    background: white;
+    border: none;
+    text-align: center;
+    color: #0A3871;
+    font-size: 1.5rem;
     position: relative;
     resize: none;
 }
 .mensaje:focus {
+    background: none;
     outline: none;
 }
+.devanecer{
+    background: transparent;
+}
+#mensaje_no_encontrado{
+    background: transparent;
+}
+#munecoImg{
+background: transparent;
+}
+.contenedor_parrafo{
+    background: transparent;
+   
+    }
+p{
+    background: transparent;
+}
+    .contenedor_copiar{
+    background: transparent;
+}
+.contenedor_copiar{
+padding: 15px;
+}
 
-.boton_copiar {
+.btn_copiar {
+    background: transparent;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 120px;
-    margin-top: 565px;
-    position: absolute;
-    width: 336px;
+    margin-left: 30px;
+    width: 328px;
+    position: relative;
+
 }

@@ -43,9 +43,9 @@ function encryptText(text) {
     }
     return decryptedText;
   }
-  const parafo = document.getElementById("contenedor_parrafo");
-  const munecoImg = document.getElementById("munecoImg");
-  const muneco = document.getElementById("contenedor_seccion_2");
+  const parafo = document.getElementById("#contenedor_parrafo");
+  const munecoImg = document.getElementById("#munecoImg");
+  const muneco = document.querySelector(".devanecer");
   const textarea = document.querySelector(".text-area");
   const outputText = document.querySelector(".mensaje");
   const encryptButton = document.querySelector(".btn-encriptar");
@@ -67,7 +67,8 @@ function encryptText(text) {
   });
   
 
-  const copyButton = document.querySelector(".btn-copiar");
+  const copyButton = document.querySelector(".btn_copiar");
+  
   copyButton.addEventListener('click', () => {
     outputText.select();
     document.execCommand('copy');
